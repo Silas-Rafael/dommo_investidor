@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Define como "Medium" */
+    background-color: #f8f9fa;
+    color: #333;
+}
+.page1{
+    width: 800px;
+    margin: 20px auto;
+}
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #02444d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .header-info {
+    text-align: right;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #169d7f;
+    width: 520px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 10% 10% 10% 6% / 0% 0% 0% 50%;
+}
+
+.header-info p{
+    color: #ffffff;
+}
+
+h1 {
+    color: #02444d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #02444d;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #02444d;
+    background-color: #02444d;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+h6 {
+    color: #02444d;
+}
+
+p {
+    color: #02444d;
+}
+
+.info-table, .projection-table, .annual-projection {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.info-table td, .projection-table td, .annual-projection th, .annual-projection td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: #02444d;
+}
+
+.annual-projection thead {
+    color: #02444d;
+}
+
+.annual-projection th {
+    text-align: center;
+}
+
+.interessado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.interValor h2 {
+    margin: 0;
+    text-align: right;
+    font-size: 30px;
+}
+
+.interValor p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #169d7f;
+    width: 100%;
+    height: 50px;
+    padding-right: 20px;
+    border-radius: 6% 6% 25% 26% / 80% 80% 0% 0%;
+}
+
+.divt {
+    padding: 0 50px;
+}
+
+.highlight {
+    background-color: #fdc727; /* Fundo amarelo */
+    color: #02444d; /* Texto verde */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.page1 img {
+    width: 100%;
+    height: auto;
+}
+
+.observacoes {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #02444d;
+    margin-bottom: 20px;
+}
+
+.finalizacao {
+    font-size: 16px;
+    text-align: justify;
+    color: #02444d;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.observacoes {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding-left: 20px;
+    color: #02444d;
+    margin-bottom: 20px;
+    counter-reset: item; /* Inicia o contador uma vez para toda a lista */
+}
+
+.observacoes li::before {
+    content: counter(item, lower-alpha) ") "; /* Define letras minúsculas (a, b, c, ...) */
+    counter-increment: item; /* Incrementa o contador a cada item */
+    color: #02444d; /* Cor da letra */
+    font-weight: bold;
+    
+}
+
+.observacoes li {
+    text-align: justify;
+    color: #02444d;
+    margin-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.divAssinatura{
+    display: flex;
+    margin: 20px;
+}
+
+.pg2aling{
+    padding: 20px;
+}
+
+.divAssinatura {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.assinatura {
+    font-size: 14px;
+    text-align: center;
+    color: #02444d;
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 2px solid #333; /* Define a linha acima */
+    width: 200px; /* Largura da linha, ajuste conforme necessário */
+}
+
+h4{
+    font-size: 18px;
+    color: #000; 
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: transparent; 
+
+  }
+
+.no-border1, .no-border1 td, .no-border1 th,
+.no-border2, .no-border2 td, .no-border2 th {
+    text-align: left;
+    border: none;
+}
+
+.no-border1 td:last-child,
+.no-border2 td:last-child {
+    text-align: right; /* Alinha o texto da coluna direita à direita */
+}
+
